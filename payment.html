@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buying & Payment Page</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Buying & Payment page</div>
+        <form action="#">
+            <div class="buypay-page">
+                <div class="pay-box">
+                    <span class="details">Pembayaran</span>
+                    <select name="pembayaran" id="pembayaran" onchange="opsipembayaran()">
+                        <option value="cancel" disabled selected>Pilih opsi Pembayaran</option>
+                        <option value="cash" id="cash">Cash</option>
+                        <option value="credit" id="credit">Credit</option>
+                    </select>
+                </div>
+                <div class="pay-box">
+                    <span class="details"> Opsi Cicilan</span>
+                    <select name="cicilan" id="cicilan" onchange="opsicicilan()">
+                        <option value= "" disabled selected>Pilih opsi Cicilan</option>
+                        <option value="5">5 Months</option>
+                        <option value="10">10 Months</option>
+                        <option value="15">15 Months</option>
+                        <option value="20">20 Months</option>
+                    </select>
+                </div>
+                <div class="buy-box">
+                    <span class="details">Choose product you want to buy :</span>
+                </div>
+                <div class="buy-box">
+                    <select name="phone" id="phone" onchange="totalprice()">
+                        <option value="16000000" selected>iPhone 14</option>
+                        <option value="18000000">iPhone 14 Plus</option>
+                        <option value="20000000">iPhone 14 Pro</option>
+                        <option value="22000000">iPhone 14 Pro Max</option>
+                    </select>
+                    <!-- <select name="airpods" id="airpods" onchange="airpodsprice()">
+                        <option value="">Select your Airpods</option>
+                        <option value="1000000">Airpods 1st gen</option>
+                        <option value="2000000">Airpods 2nd gen</option>
+                        <option value="3000000">Airpods 3rd gen</option>
+                    </select>
+                    <select name="watch" id="watch" onchange="watchprice()">
+                        <option value="">Select your Watch</option>
+                        <option value="5000000">Apple Watch SE</option>
+                        <option value="8000000">Apple Watch Series 6</option>
+                        <option value="8000000">Apple Watch Series 7</option>
+                        <option value="8000000">Apple Watch Series 8</option>
+                    </select> -->
+                </div>
+                <div class="pay-box">
+                    <span class="details">Total Price</span>
+                    <input type="text" name="price" id="price" disabled value="0">
+                    </select>
+                </div>
+                <div class="pay-box">
+                    <span class="details">Discount</span>
+                    <input type="text" name="discount" id="discount" disabled value="0">
+                    </select>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" value="Buy">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+    <script src="alert.js"></script>
+</body>
+</html>

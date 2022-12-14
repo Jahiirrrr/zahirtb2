@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(29, 29, 29);
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 10px;
+}
+
+.container .title{
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+}
+
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: rgb(29, 29, 29);
+}
+
+.container form .buypay-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0 12px 0;
+}
+
+form .buypay-page .buy-box{
+    width: 100%;
+}
+
+.buypay-page .buy-box .details{
+    display: block;
+    margin-bottom: 3px;
+}
+
+.buypay-page .buy-box select{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+form .buypay-page .pay-box{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 2 - 15px);
+}
+
+.buypay-page .pay-box .details{
+    display: block;
+    margin: 3px;
+}
+
+.buypay-page .pay-box select, input{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+}
+
+form .button input{
+    width: calc(100% / 2 - 15px);
+    height: 50px;
+    justify-content: space-between;
+    outline: none;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background: rgb(29, 29, 29);
+    margin: 6px;
+}
+
+form .button input:hover{
+    background: rgb(39, 39, 39);
+}
+
+
+select:invalid{ 
+    color: gray;
+}
